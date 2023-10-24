@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tally Count</title>
+
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.0/cdn/themes/light.css" />
+  <script type="module"
+    src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.0/cdn/shoelace-autoloader.js"></script>
+   
+  <script src="/scripts.js" defer type="module"></script>
+</head>
+
+
+<body>
+  <header class="header">
+    <h1 class="header__title">Tally Count</h1>
+  </header>
+
+  <main class="counter">
+    <input class="counter_value" data-key="number" readonly value="0" />
+    <div class="counter_actions">
+      <sl-button class="subtract" data-key="subtract" variant="danger"><sl-icon name="dash"></sl-icon></sl-button>
+      <sl-button class="reset" data-key="reset" variant="neutral">
+        <sl-icon name="arrow-clockwise"></sl-icon>
+      </sl-button>
+<sl-button class="add" data-key="add" variant="success"><sl-icon name="plus"></sl-button>
+    </div>
+  </main>
+  <footer class="footer">
+    Inspired by
+    <a class="footer_link" href="https://tallycount.app/">Tally Count</a>.
+  </footer>
+</body>
+
+</html>
